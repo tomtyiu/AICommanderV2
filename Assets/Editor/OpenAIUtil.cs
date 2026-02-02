@@ -13,7 +13,7 @@ static class OpenAIUtil
         msg.content = prompt;
 
         var req = new OpenAI.Request();
-        req.model = "gpt-4-turbo";
+        req.model = "gpt-5.2";
         req.messages = new [] { msg };
 
         return JsonUtility.ToJson(req);
